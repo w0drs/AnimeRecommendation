@@ -1,5 +1,6 @@
 import flet as ft
 
+from config.config_file import WEB_APP_PORT
 from frontend.grid_view import AnimeGrid
 from frontend.main_page import MainPage
 
@@ -24,8 +25,8 @@ def main(page: ft.Page):
 if __name__ == "__main__":
     ft.app(
         target=main,
-        host="192.168.3.17",
-        port=8228,
+        host="0.0.0.0",
+        port=WEB_APP_PORT,
         view=ft.WEB_BROWSER,
         use_color_emoji=True,
         assets_dir="assets",

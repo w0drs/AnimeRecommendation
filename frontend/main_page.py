@@ -1,4 +1,6 @@
 import flet as ft
+
+from config.config_file import SERVER_ADDRESS, MICROSERVICE_PORT
 from grid_view import AnimeGrid
 import requests
 
@@ -6,7 +8,7 @@ class MainPage:
     """
     Главная страница со всеми виджетами
     """
-    def __init__(self, page: ft.Page, grid: AnimeGrid):
+    def __init__(self, page: ft.Page, grid: AnimeGrid) -> None:
         self.page = page
         self.grid = grid # Объект класса сетки в которой находятся контейнеры с аниме контентом
 
@@ -113,16 +115,18 @@ class MainPage:
         """
         return self.all_page
 
-    def _get_recommendation(self, e):
+    def _get_recommendation(self, e) -> None:
         """
         Запрос на сервис по выдаче аниме рекомендаций
         """
         request = {
             "title":self.AnimeTitleTextField.value,
             "synopsis": self.AnimeSynopsisTextField.value,
-            "k": 10
+            "k": 16
         }
 
-        data = requests.post("http://192.168.3.17:8000/recommend", json=request)
+        # Запрос на сервис
+        data = requests.post(f"http://{SERVER_ADDRESS}:{MICROSERVICE_PORT}/recommend", json=request)
         json_data = data.json()
+        # Обновление сетки с аниме
         self.grid.add_anime(json_data.get("recommendation"))
