@@ -26,3 +26,8 @@ Anime Recommendation System - это веб-приложение для поис
   <img src="frontend/assets/MainPage.png" alt="Главная страница" width="1920"/>
 </div>
 
+После введения описания аниме в соответствующее поле, выдаются рекомендации: 
+<div align="center">
+  <img src="frontend/assets/GetRecommendation.png" alt="Рекомедации" width="1920"/>
+</div>
+
