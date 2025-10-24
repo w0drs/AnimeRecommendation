@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="frontend/assets/shapka.png" alt="Шапка" width="600"/>
+  <img src="frontend/assets/shapka.png" alt="Шапка" width="1920"/>
 </div>
 
 # 📖 О проекте
@@ -23,6 +23,6 @@ Anime Recommendation System - это веб-приложение для поис
 # Пример работы системы 
 Главная страница рекомендера выглядит следующим образом: 
 <div align="center">
-  <img src="frontend/assets/shapka.png" alt="Главная страница" width="1920"/>
+  <img src="frontend/assets/MainPage.png" alt="Главная страница" width="1920"/>
 </div>
 
