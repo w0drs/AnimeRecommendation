@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="frontend/assets/shapka.png" alt="Шапка" width="1920"/>
+  <img src="frontend/assets/shapka2.png" alt="Шапка" width="1920"/>
 </div>
 
 ## 🎌 Anime Recommendation System 
