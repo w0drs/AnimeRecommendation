@@ -25,7 +25,7 @@ Anime Recommendation System - это система для поиска похо
 
 | Главный экран | Рекомендации | Детали аниме |
 |---------------|--------------|--------------|
-| <img src="assets/MainPage.png" width="250"> | <img src="assets/GetRecommendation.png" width="250"> | <img src="assets/MashleAnime.png" width="250"> |
+| <img src="frontend/assets/MainPage.png" width="250"> | <img src="frontend/assets/GetRecommendation.png" width="250"> | <img src="frontend/assets/MashleAnime.png" width="250"> |
 
 </div>
 Здесь было взято описание аниме "Магическая битва" (Проклятая энергия, магический колледж, сражения) 
